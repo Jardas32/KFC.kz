@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+header {
+    background-color: rgb(240, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    /* background-color: rgb(103, 103, 237); */
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all .3s;
+    color: red;
+}
+
+main {
+    width: 100%;
+    /* height: 1000px; */
+    margin-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.product {
+    background-image: url(img/KFC-Restaurant-1.png);
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 20px;
+    padding: 30px 0;
+
+
+}
+
+.card {
+    background-color: rgb(244, 242, 239);
+    height: 375px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.157));
+    border-radius: 7px;
+
+}
+
+.imgcard {
+    width: 250px;
+    height: 250px;
+}
+
+.title {
+    font-style: italic;
+    color: rgb(116, 101, 18);
+}
+
+.price {
+    background-color: gold;
+    color: red;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#btn {
+    padding: 2px 6px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 200px;
+    transition: all .3s;
+}
+
+#btn:hover {
+    background-color: rgb(14, 97, 11);
+}
+
+.maps {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(211, 209, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+
+}
+
+.address li {
+    color: rgb(28, 27, 27);
+}
+
+.soc {
+    display: flex;
+    gap: 20px;
+}
+
+.soc img {
+    width: 25px;
+}
+
+@media (max-width:440px) {
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
